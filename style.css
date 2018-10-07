@@ -1,0 +1,19 @@
+.first-col{
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+.outer-content{
+  align: left;
+  background-color: #FFAFED;
+  margin-top: 20px;
+  padding: 10px;
+  max-width: 75%;
+  min-width: 75%;
+}
+
+
+.inner-content{
+  background-color: #5ECFFF;
+}
