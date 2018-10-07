@@ -1,6 +1,21 @@
+table, th, td{
+  border: 1px solid black;
+}
+
+
 .first-col{
   font-style: italic;
   font-weight: normal;
+}
+
+
+tbody.color-change tr:nth-of-type(odd){
+  background-color: #F6D6E8;
+}
+
+
+tbody.color-change tr:nth-of-type(even){
+  background-color: #B6EEFE;
 }
 
 
@@ -15,5 +30,6 @@
 
 
 .inner-content{
+  text-align: center;
   background-color: #5ECFFF;
 }
