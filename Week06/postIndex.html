@@ -1,0 +1,39 @@
+<!-- HTML page for POST request test -->
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <title>POST Ajax Activity</title>
+    <script type="text/javascript" src="postScript.js">
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Join Our Mailing List</legend>
+
+        <label>First Name:
+          <input type="text" name="firstName" id="firstName">
+        </label>
+        <br />
+        <label>Last Name:
+          <input type="text" name="lastName" id="lastName">
+        </label>
+        <br />
+        <label>Email:
+          <input type="email" name="email" id="email">
+          <input type="submit" id="dataSubmit">
+        </label>
+      </fieldset>
+    </form>
+
+    <div>
+      <h3>You Entered: </h3>
+      <p>First Name: <span id="givenResp"> </span></p>
+      <p>Last Name: <span id = "surnameResp"></span></p>
+      <p>Email: <span id = "emailResp"></span></p>
+    </div>
+  </body>
+</html>
