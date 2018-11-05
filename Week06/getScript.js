@@ -19,7 +19,7 @@ function setButtons(){
      //Took CORS issue solution from
      //https://github.com/axios/axios/issues/853
      var requestString = "https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?q=" +
-      city.locationIn + "&units=imperial&appid="+ apiKey;
+      city.locationIn + ",us&units=imperial&appid="+ apiKey;
 
      req.open('GET', requestString, true);
      req.setRequestHeader('Content-Type', 'application/json');
@@ -30,10 +30,10 @@ function setButtons(){
 
          console.log("Request successful");
 
-         document.getElementById('temperature').textContent = response.main.temp;
-         document.getElementById('conditions').textContent = response.weather.main;
-         document.getElementById('tempHi').textContent = response.main.temp_max;
-         document.getElementById('tempLo').textContent = response.main.temp_min;
+         document.getElementById('temperature').textContent = response.main.temp + '°F';
+         //document.getElementById('conditions').textContent = response.weather.description;
+         document.getElementById('tempHi').textContent = response.main.temp_max + '°F';
+         document.getElementById('tempLo').textContent = response.main.temp_min + '°F';
        }
 
        else{
