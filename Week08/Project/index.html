@@ -3,11 +3,14 @@
     <meta charset="utf-8">
     <title>Windy City Wine & Spirits</title>
     <link rel="stylesheet" href="home-style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="slide.js"></script>
 </head>
 
 <!-- Dropdown menu adapted from
 https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
 <body>
+
   <div class="navbar">
     <img src="" alt="Windy City Wine & Spirits logo">
     <a href="contact-us.html">Contact Us</a>
@@ -25,22 +28,34 @@ https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
     </div>
   </div>
 
-<!-- Full page image adapted from
-  https://www.w3schools.com/howto/howto_css_full_page.asp -->
-<div class="photoCarousel">
+<!-- Adapted from tutorial
+https://www.youtube.com/watch?v=KkzVFB3Ba_o -->
 
-      <div id="slide1">
-      </div>
-<!--
-      <div class="rotate">
-        <img src="images/white-wine-splash.jpg"
-      </div>
-
-      <div class="rotate">
-
-      </div>
--->
+<div id="photoCarousel">
+  <ul class = "slides">
+    <li class="photos"><img src="images/background01.jpg"></li>
+    <li class="photos"><img src="images/background02.jpg"></li>
+    <li class="photos"><img src="images/background01.jpg"></li>
+  </ul>
 </div>
+
+<!-- Full page image adapted from
+  https://www.w3schools.com/howto/howto_css_full_page.asp
+
+  https://codepen.io/SitePoint/pen/ZbGwqe
+
+<div class="photoCarousel">
+  <div class="backgroundImg">
+    <img src="images/grapes.jpg" class="photo">
+  </div>
+
+  <div class="backgroundImg">
+    <img src="images/white-wine-splash.jpg" class="photo">
+  </div>
+
+</div>
+-->
+
 
   <div class="footer">
   </div>
