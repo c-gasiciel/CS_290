@@ -1,44 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 
 body, html {
   height: 100%;
-}
-
-
-
-#photoCarousel {
-  width: 720px;
-  height: 400px;
+  width: 100%;
   overflow: hidden;
-}
-
-
-#photoCarousel .slides {
-  display: block;
-  width: 6000px;
-  height: 400px;
   margin: 0;
   padding: 0;
 }
 
 
-#photoCarousel .photos {
-  /*float: left;*/
-  list-style-type: none;
-  width: 720px;
-  height: 400px;
-  z-index: -1;
-}
-
 
 .navbar{
   background-color: white;
   font-family: sans-serif;
-  overflow: hidden;
+  z-index: 1;
 }
 
 
@@ -110,7 +88,176 @@ body, html {
   display: block;
 }
 
+/* Carousel adapted from
+https://designmodo.com/create-full-screen-slider/ */
+.carousel {
+  display: block;
+  background: #FFFF;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: -webkit-transform 1600ms;
+  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.pg01 {
+  background: black;
+  left:0;
+}
+
+
+.pg02 {
+  background: blue;
+  left: 100%;
+}
+
+
+.pg03 {
+  background: green:
+  left: 200%;
+}
+
+
+.slider {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.slider img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+
+  /* Animate slides */
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+
+.pg01 img {
+  right: 0;
+}
+
+
+.slider-pagination {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  width: 575px;
+  align-items: center;
+
+  /* make foremost element */
+  z-index: 1000;
+}
+
+
+.slider-pagination label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+
+.slide-radio01:checked ~ .slider-pagination .pg01,
+.slide-radio02:checked ~ .slider-pagination .pg02,
+.slide-radio03:checked ~ .slider-pagination .pg03 {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #EA2E49;
+  background: transparent;
+}
+
+
+
+.slide-radio01:checked ~ .slider {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+
+.slide-radio02:checked ~ .slider {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+
+.slide-radio03:checked ~ .slider {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+
+
+.slide-radio01:checked ~ .pg01 img,
+.slide-radio02:checked ~ .pg02 img,
+.slide-radio03:checked ~ .pg03 img {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+
 /*
+#photoCarousel {
+  width: 720px;
+  height: 400px;
+  overflow: hidden;
+}
+
+
+#photoCarousel .slides {
+  display: block;
+  width: 6000px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+
+#photoCarousel .photos {
+  float: left;
+  list-style-type: none;
+  width: 720px;
+  height: 400px;
+  z-index: -1;
+}
+
+*****
 .photoCarousel {
   background-image: url("images/grapes.jpg");
   background-position: center;
