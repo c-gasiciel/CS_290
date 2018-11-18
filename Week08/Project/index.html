@@ -2,18 +2,22 @@
 <head>
     <meta charset="utf-8">
     <title>Windy City Wine & Spirits</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="home-style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="slide.js"></script>
+
 </head>
 
 <!-- Dropdown menu adapted from
 https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
 <body>
-
-  <div class="navbar">
+  <!-- Menu -->
+  <nav id="navbar">
     <div class="navbar-left">
-      <img src="" alt="Windy City Wine & Spirits logo">
+      <a href="index.html">
+        Windy City Wine & Spirits
+      </a>
     </div>
 
     <div class="navbar-right">
@@ -26,45 +30,80 @@ https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
           <a href="red-wine.html">Red</a>
         </div>
       </div>
-      
+
       <a href="sake.html">Sake</a>
       <a href="tea.html">Tea</a>
       <a href="about.html">Our Story</a>
       <a href="contact-us.html">Contact Us</a>
     </div>
-  </div>
+  </nav>
 
-<!-- Carousel adapted from https://designmodo.com/create-full-screen-slider/ -->
+
+<div class="main">
+  <!-- Carousel adapted from https://designmodo.com/create-full-screen-slider/ -->
 <div class="carousel">
   <input type="radio" name="slider" class="slide-radio01" checked id="slider01">
   <input type="radio" name="slider" class="slide-radio02" id="slider02">
   <input type="radio" name="slider" class="slide-radio03" id="slider03">
+  <input type="radio" name="slider" class="slide-radio04" id="slider04">
 
   <div class="slider-pagination">
     <label for="slider01" class="page01"></label>
     <label for="slider02" class="page02"></label>
     <label for="slider03" class="page03"></label>
+    <label for="slider04" class="page04"></label>
   </div>
 
   <!-- Slide 1 -->
-  <div class="slider pg01">
+  <div class="slider photo01">
     <img src="images/background01.jpg" alt="photo of vineyard">
+
+    <div class="slide-content">
+      <h3>Purveyors of beverage sourced with the utmost care.</h3>
+    </div>
   </div>
 
 
-  <!-- Slide 2 -->
-  <div class="slider pg02">
-    <img src="images/background02.jpg" alt="photo of someone pouring white wine">
+ <!-- Slide 2 -->
+  <div class="slider photo02">
+    <img src="images-sm/background02.jpg" alt="photo of someone pouring wine">
+
+    <div class="slide-content">
+      <h3>Discover our our rare yet approachable wines.</h3>
+      <p class="photo-credit">
+    </div>
   </div>
 
 
   <!-- Slide 3 -->
-  <div class="slider pg03">
-    <img src="images/background03.jpg" alt="">
+  <div class="slider photo03">
+    <img src="images/background04.jpg" alt="photo of sake">
+
+    <div class="slide-content">
+      <h3>Explore our variety of rare premium sake.</h3>
+      <p class="photo-credit">Photo courtesy of <a href="http://www.gakusushi.com/sake/">Gaku
+        Sushi</a></p>
+    </div>
   </div>
+
+
+  <!-- Slide 4 -->
+  <div class="slider photo04">
+    <img src="images/background05.jpg" alt="photo of green tea">
+
+    <div class="slide-content">
+      <h3>Venture into a world of exceptional, globally sourced teas.</h3>
+      <p class="photo-credit">Photo by <a href="http://newbyteas.us/blog/2017/01/28/japanese-green-tea/">
+      Newby Teas </a></p>
+    </div>
+  </div>
+
 </div>
 
-<!-- Adapted from tutorial
+</div>
+
+<!--
+Adapted from tutorial
 https://www.youtube.com/watch?v=KkzVFB3Ba_o
 
 <div id="photoCarousel">
@@ -74,9 +113,9 @@ https://www.youtube.com/watch?v=KkzVFB3Ba_o
     <li class="photos"><img src="images/background01.jpg"></li>
   </ul>
 </div>
--->
 
-<!-- Full page image adapted from
+
+Full page image adapted from
   https://www.w3schools.com/howto/howto_css_full_page.asp
 
   https://codepen.io/SitePoint/pen/ZbGwqe

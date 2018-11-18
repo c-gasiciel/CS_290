@@ -1,3 +1,6 @@
+/* Fixed navbar attributes adapted from
+https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+
 * {
   box-sizing: border-box;
 }
@@ -12,32 +15,34 @@ body, html {
 }
 
 
-
-.navbar{
-  background-color: white;
-  font-family: sans-serif;
+/* Navbar styling */
+#navbar{
+  /* background-color: white; */
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Raleway', sans-serif;
   z-index: 1;
 
   /* Additions */
   /* Set up flexbox */
   display: flex;
-  position: absolute;
+  /*position: absolute; */
   width: 100%;
   height: 80px;
-  padding: 0 100px;
+  padding: 0 50px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
 }
 
 
-.navbar-left {
+.navbar-left a{
   margin-left: -33px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-
-.navbar-left img {
-
-}
 
 .navbar-right {
   display: flex;
@@ -79,7 +84,7 @@ body, html {
 
 
 .dropdown .dropButton{
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   color: black;
   font-family: inherit;
@@ -90,7 +95,7 @@ body, html {
 }
 
 
-.navbar a:hover, .dropdown:hover .dropButton{
+#navbar a:hover, .dropdown:hover .dropButton{
   background-color: black;
   color: white;
 }
@@ -125,6 +130,12 @@ body, html {
   display: block;
 }
 
+
+.main {
+  margin-top: 30px;
+}
+
+
 /* Carousel adapted from
 https://designmodo.com/create-full-screen-slider/ */
 .carousel {
@@ -153,28 +164,34 @@ https://designmodo.com/create-full-screen-slider/ */
   align-items: center;
   justify-content: center;
   align-content: center;
-  -webkit-transition: -webkit-transform 1600ms;
-  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transition: -webkit-transform 1600ms ease;
+  transition: -webkit-transform 1600ms ease, transform 1600ms ease;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
 
-.pg01 {
+.photo01 {
   background: black;
   left:0;
 }
 
 
-.pg02 {
+.photo02 {
   background: blue;
   left: 100%;
 }
 
 
-.pg03 {
+.photo03 {
   background: green:
   left: 200%;
+}
+
+
+.photo04 {
+  background: red;
+  left: 300%;
 }
 
 
@@ -184,12 +201,38 @@ https://designmodo.com/create-full-screen-slider/ */
 }
 
 
-.slider img {
+.slide-content {
+  width: 635px;
+  padding-left: 100px;
+}
+
+
+.slider h3{
+  /* opacity: 0; */
+  line-height: 1.2;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
+
+  /* Animate text */
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+
+.slider &gt; img {
   position: absolute;
-  right: 10%;
+  top: 0;
+  right: 0;
   bottom: 0;
   height: 100%;
+  width: 100%;
   opacity: 0;
+  /* overflow: hidden; */
   -webkit-transform: translateX(500px);
   transform: translateX(500px);
 
@@ -200,10 +243,6 @@ https://designmodo.com/create-full-screen-slider/ */
   transition-delay: 1.2s;
 }
 
-
-.pg01 img {
-  right: 0;
-}
 
 
 .slider-pagination {
@@ -230,9 +269,10 @@ https://designmodo.com/create-full-screen-slider/ */
 }
 
 
-.slide-radio01:checked ~ .slider-pagination .pg01,
-.slide-radio02:checked ~ .slider-pagination .pg02,
-.slide-radio03:checked ~ .slider-pagination .pg03 {
+.slide-radio01:checked ~ .slider-pagination .page01,
+.slide-radio02:checked ~ .slider-pagination .page02,
+.slide-radio03:checked ~ .slider-pagination .page03,
+.slide-radio04:checked ~ .slider-pagination .page04 {
   width: 14px;
   height: 14px;
   border: 2px solid #EA2E49;
@@ -240,7 +280,7 @@ https://designmodo.com/create-full-screen-slider/ */
 }
 
 
-
+/* Create slide effect */
 .slide-radio01:checked ~ .slider {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
@@ -259,14 +299,52 @@ https://designmodo.com/create-full-screen-slider/ */
 }
 
 
-.slide-radio01:checked ~ .pg01 img,
-.slide-radio02:checked ~ .pg02 img,
-.slide-radio03:checked ~ .pg03 img {
+.slide-radio04:checked ~ .slider {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+
+.slide-radio01:checked ~ .photo01 h3,
+.slide-radio02:checked ~ .photo02 h3,
+.slide-radio03:checked ~ .photo03 h3,
+.slide-radio04:checked ~ .photo04 h3,
+.slide-radio01:checked ~ .photo01 &gt; img,
+.slide-radio02:checked ~ .photo02 &gt; img,
+.slide-radio03:checked ~ .photo03 &gt; img,
+.slide-radio04:checked ~ .photo04 &gt; img {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
 }
 
+
+/* Add responsiveness */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 2%;
+  }
+
+
+  .navbar-left {
+    display: none;
+  }
+
+
+  .slider-pagination {
+    left: 2%;
+  }
+
+
+  .slider img {
+    right: 2%;
+  }
+
+
+  .pg01 img {
+    right: -110px;
+  }
+
+}
 
 
 /*
