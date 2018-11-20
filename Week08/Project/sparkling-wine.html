@@ -1,24 +1,120 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Windy City Wine & Spirits</title>
-    <link rel="stylesheet" href="home-style.css" type="text/css">
+    <title>Red Wines</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/subpage-style.css" type="text/css">
+    <script src="scripts/accordionScript.js"></script>
 </head>
 
 <body>
-<h1>Sparkling Wines</h1>
+  <nav id="navbar">
+    <div class="navbar-left">
+      <a href="index.html">
+        Windy City Wine & Beverage
+      </a>
+    </div>
 
-<h3>Champagne</h3>
-<ul>
-  <li><a href="Pierre-Gerbais.html">NV Pierre Gerbais <em>Grains de Celles</em> Extra Brut</a></li>
-  <li><a href="Lanson.html">NV Lanson <em>Black Label</em> Brut</a></li>
-</ul>
+    <div class="navbar-right">
+      <a href="index.html">Home</a>
 
-<h3>Sparkling & Cremants</h3>
-<ul>
-  <li><a href="Vigneau-Chevreau.html">NV Vigneau-Chevreau Vouvray <em>Vigneau Selection</em> Brut</a></li>
-  <li><a href="Val-de-Mar.html">NV Val de Mer Brut Nature Rosé</a></li>
-</ul>
+      <div class="dropdown">
+        <button class="dropButton">Wine</button>
+        <div class="dropItems">
+          <a href="sparkling-wine.html">Sparkling</a>
+          <a href="white-wine.html">White</a>
+          <a href="red-wine.html">Red</a>
+        </div>
+      </div>
+
+      <a href="sake.html">Sake</a>
+      <a href="tea.html">Tea</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </nav>
+
+
+  <div class="banner sparklingBanner">
+    <div class="banner-header">
+      <h1>Sparkling Wines</h1>
+    </div>
+  </div>
+
+
+  <div class ="outer">
+    <p class="accordion accSparkling">NV Pierre Gerbais <em>Grains de Celles</em> Extra Brut</p>
+    <div class="panel sparklingPanel">
+      <p>Celles-sur-Ource, Champagne, France</p>
+      <ul>
+        <li>One of the rising stars of Champagne, Aurelien Gerbais comes from
+          seven generations of winegrowers from this area and organically grows
+          all the grapes that go into his wines.</li>
+        <li>50% Pinot Noir, 25% Chardonnay, 25% Pinot Blanc from sustainably
+          farmed 30-year-old vines on Kimmeridgian bedrock from Celles-sur-Ource
+           in the Côte des Bar region of southern Champagne</li>
+        <li>Perfect for someone who is looking for a lighter, dryer champagne or
+            who is interested in “grower” style champagnes.</li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accSparkling">NV Lanson <em>Black Label</em> Brut</p>
+    <div class="panel sparklingPanel">
+      <p>Reims, Champagne, France</p>
+      <ul>
+        <li>A combination of 50% Pinot Noir, 35% Chardonnay and 15% Pinot
+          Meunier, from numerous crus selected by the winemaker and from almost
+          ten different years. Lanson Black Label is further enhanced by three
+          years resting in the cellar, including 6 months following disgorging,
+          at which point it reaches perfect maturation.</li>
+        <li>The House of Lanson has been the official supplier to the British
+          court since 1900, when Henri Marie Lanson was awarded the title of
+          “Purveyor of Champagne to Her Majesty” by Queen Victoria</li>
+        <li>Pefect for those who want a fuller, richer style of champagne.</li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accSparkling">NV Vigneau-Chevreau Vouvray <em>Vigneau Selection</em> Brut</p>
+    <div class="panel sparklingPanel">
+      <p>Loire Valley, France</p>
+      <ul>
+        <li>100% Chenin Blanc from the Champagne Method</li>
+        <li>Domaine Vigneau-Chevreau is one of the only two estates in Vouvray
+          to be biodynamic.</li>
+        <li>ince 1875, the Vigneau-Chevreau family has farmed the chalky soils
+          of this 69-acre Vouvray domaine, planted entirely to Chenin Blanc.</li>
+        <li>Excellent choice for lovers of prosecco and fruitier bubbly wines</li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accSparkling">NV Val de Mer Brut Nature Rosé</p>
+    <div class="panel sparklingPanel">
+      <p>Burgundy France</p>
+      <ul>
+        <li>100% Pinot Noir fruit from the town of Tonnerre, located 10 miles
+          from Chablis.</li>
+        <li>The grapes are hand-harvested. After a short maceration on the skins
+           for color, the juice is fermented and aged in stainless steel tanks
+           before undergoing secondary fermentation.</li>
+        <li>Perfect for someone who wants a dryer, mineral-driven sparkling rose.</li>
+      </ul>
+    </div>
+
+
+    <a href="resources/priceList.pdf" download>
+      <button class="downloadBtn">Download Price List</button>
+    </a>
+</div>
+
+
+
+<div id="footer" class="sparklingFooter">
+  <p>Photo courtesy of <a href="https://www.sbe.com/blog/brief-history-of-champagne/">
+      The Collection</a>.
+</div>
 
 </body>
 </html>

@@ -1,0 +1,356 @@
+/* Fixed navbar attributes adapted from
+https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* Navbar styling */
+#navbar{
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
+
+/* Additions */
+/* Set up flexbox */
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+
+.navbar-left a{
+  margin-left: -33px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-itmes: center;
+}
+
+
+.navbar-right a{
+  color: black;
+  display: inline-block;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all .2s;
+}
+
+
+.dropdown{
+  display: inline-block;
+  overflow: hidden;
+  transition: all .2s;
+}
+
+
+.dropdown .dropButton{
+  background-color: white;
+  border: none;
+  color: black;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 16px;
+  outline: none;
+}
+
+
+#navbar a:visited {
+  color: black;
+}
+
+
+#navbar a:hover, .dropdown:hover .dropButton{
+  background-color: black;
+  color: white;
+}
+
+
+.dropItems {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0.2);
+  color: black;
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropItems a{
+  color: inherit;
+  display: block;
+  float: none;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+.dropItems a:hover {
+  background-color: black;
+  color: white;
+}
+
+.dropdown:hover .dropItems {
+  display: block;
+}
+
+
+
+/* General banner styling */
+.banner {
+  padding: 270px 0px 0px 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 610px;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.banner-header {
+  align: center;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+
+/* Styling for red wines page banner */
+.redBanner {
+    background-image: url(backgrounds/background03.jpg);
+    color: #F1EFF0;
+}
+
+
+/* Styling for white wines banner */
+.whiteBanner {
+  background-image: url(backgrounds/white-wine.jpg);
+  color: white;
+}
+
+
+/* Styling for sparkling wines banner */
+.sparklingBanner {
+    background-image: url(backgrounds/champagne.jpg);
+    color: white;
+}
+
+
+/* Styling for rose banner */
+.roseBanner {
+
+}
+
+
+/* Styling for sake banner */
+.sakeBanner {
+    background-image: url(backgrounds/sake.jpg);
+    color: white;
+}
+
+
+
+
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px auto 60px auto;
+  align-items: center;
+  /*margin-bottom: 50px; */
+}
+
+
+.region {
+  padding-bottom: 50px;
+}
+
+
+h3.redRegion {
+  color: #10171E;
+}
+
+
+
+.redOuter {
+  background-color: #E5E7EC;
+}
+
+
+/* General accordion styling */
+p.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    text-align: left;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+}
+
+
+/* Styling for accordion on red wine page */
+p.accRed {
+  background-color: #472824;
+  color: #F1EFF0;
+}
+
+
+p.accRed.active, p.accRed:hover {
+    background-color: #10171E;
+}
+
+
+p.accWhite {
+  color: #1D1D0D;
+}
+
+
+/* Styling for accordion on sake page */
+p.accSake {
+  background-color: #92AE9D;
+  color: #444;
+}
+
+
+p.accSake.active, p.accSake:hover {
+    background-color: #679792;
+}
+
+
+
+/* Add plus sign */
+p.accordion:after {
+    content: '\2795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Add minus sign */
+p.accordion.active:after {
+    content: "\2796";
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:30px;
+    width: 75%;
+}
+
+
+div.panel.show {
+    opacity: 1;
+    max-height: 600px;
+}
+
+
+.panel li{
+  padding-bottom: 20px;
+}
+
+
+
+.redPanel {
+  background-color: #F1EFF0;
+}
+
+
+.whitePanel {
+  color: #18190C;
+}
+
+
+.downloadBtn {
+  margin: 20px auto 50px auto;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+
+/* General footer styling */
+#footer {
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  border-radius: 75%;
+  padding: 20px 35px 30px 0px;
+}
+
+
+#footer a:visited {
+  color: inherit;
+}
+
+
+/* Footer for red wines */
+.redFooter {
+    background-color: #472824;
+    color: white;
+}
+
+
+/* Styling for white wines banner */
+.whiteFooter {
+  background-color: #060B04;
+  color: white;
+}
+
+
+/* Styling for sparkling wines banner */
+.sparklingFooter {
+  background-color: #1E1507;
+  color: #F1EFF0;
+}
+
+
+/* Styling for rose banner */
+.roseFooter{
+
+}
+
+
+/* Styling for sake banner */
+.sakeFooter {
+    background-color: #679792;
+    color: white;
+}

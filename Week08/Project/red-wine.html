@@ -2,24 +2,29 @@
 <head>
     <meta charset="utf-8">
     <title>Red Wines</title>
-    <link rel="stylesheet" href="home-style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/subpage-style.css" type="text/css">
+    <script src="scripts/accordionScript.js"></script>
 </head>
 
 <body>
   <nav id="navbar">
     <div class="navbar-left">
       <a href="index.html">
-        <img src="" alt="Windy City Wine & Spirits logo">
+        Windy City Wine & Beverage
       </a>
     </div>
 
+
     <div class="navbar-right">
+      <a href="index.html">Home</a>
+
       <div class="dropdown">
         <button class="dropButton">Wine</button>
         <div class="dropItems">
           <a href="sparkling-wine.html">Sparkling</a>
           <a href="white-wine.html">White</a>
-          <a href="rose.html">Rose</a>
           <a href="red-wine.html">Red</a>
         </div>
       </div>
@@ -31,30 +36,131 @@
     </div>
   </nav>
 
-<h1>Red Wines</h1>
 
-<h3>From France</h3>
-<ul>
-  <li><a href="Domaine-Chofflet.html">2015 Domaine Chofflet Valdinaire</a></li>
-  <li><a href="Domaine-Devillard.html">2015 Domaine Devillard Bourgogne Rouge <em>Le Renard</em></a></li>
-  <li><a href="Jean-Foillard.html">2016 Jean Foillard Beaujolais-Villages</a></li>
-  <li><a href="Chateau-Cantermerle.html">2012 Chateau Cantermerle Les Allees de Cantermerle</a></li>
-</ul>
+<div class="banner redBanner">
+  <div class="banner-header">
+    <h1>Red Wines</h1>
+  </div>
+</div>
 
-<h3>From Italy</h3>
-<ul>
-  <li><a href="De-Forville.html">2015 De Forville Barbaresco</a></li>
-  <li><a href="Meridio.html">2015 Meridio Terre Siciliane Rosso Liama</a></li>
-</ul>
 
-<h3>From Spain</h3>
-<ul>
-  <li><a href="Vinatigo.html">2016 Viñatigo Tinto Listan Negro</a></li>
-</ul>
+<div class ="outer redOuter">
 
-<h3>From Argentina</h3>
-<ul>
-  <li><a href="Alma-Negra.html">2016 Alma Negra M Blend</a></li>
-</ul>
+    <p class="accordion accRed">2015 Domaine Chofflet Valdinaire</p>
+    <div class="panel redPanel">
+      <p>Givry, Burgundy, France</p>
+      <ul>
+        <li>100% pinot noir from the Givry appellation of the Cote Chalonnaise
+          in Southern Burgundy</li>
+        <li>Ripe, fruity, sexy</li>
+        <li>Perfect for lovers of classic Burgonian style pinot noirs</li>
+      </ul>
+
+      <a href="http://www.newgenwines.com/images/files/70-givry.pdf">Learn more</a>
+    </div>
+
+
+    <p class="accordion accRed">2015 Domaine Devillard Bourgogne Rouge <em>Le Renard</em></p>
+    <div class="panel redPanel">
+      <p>Burgundy, France</p>
+      <ul>
+        <li>100% pinot noir</li>
+        <li>Earthy and light with floral undertones</li>
+        <li>Perfect for lovers of Willamette Valley pinot noir</li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accRed">2016 Jean Foillard Beaujolais-Villages</p>
+    <div class="panel redPanel">
+      <p>Burgundy, France</p>
+      <ul>
+        <li>100% gamay</li>
+        <li>A light, fruity, fresh, and fun wine from a legendary producer</li>
+        <li>A crowd-pleaser for lovers of red wine of all varieties</li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accRed">2012 Chateau Cantermerle Les Allees de Cantermerle</p>
+    <div class="panel redPanel">
+      <p>Haut-Medoc, Bordeaux, France</p>
+      <ul>
+        <li> 61% cabernet sauvignon, 29% merlot, 10% cabernet franc</li>
+        <li>Aged 1 year in French oak barriques</li>
+        <li>Perfect for lovers of full-bodied, dry reds such as cabernet sauvignon or Bordeaux</li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accRed">2015 De Forville Barbaresco</p>
+    <div class="panel redPanel">
+      <p>Piedmont, Italy</p>
+      <ul>
+        <li>A well-known classic style at an excellent price! </li>
+        <li>100% nebbiolo</li>
+        <li>Lovely and fresh with an array of red fruits on the palette, structured tannins, and acidity that begs to be accompanied by food</li>
+      </ul>
+    </div>
+
+    <p class="accordion accRed">2015 Meridio Terre Siciliane Rosso Liama</p>
+    <div class="panel redPanel">
+      <p>Sicily, Italy</p>
+      <ul>
+        <li>Founded by two geologists in 2007, this wine makes prime use of the unique soil that results from the meeting of three tectonic plates across the island of Sicily</li>
+        <li>Nero D’Avola, Frappato, and Alicante blend</li>
+        <li>A favorite of appreciators of natural wines like COS or Occhipinti or those who prefer a fruity, medium-bodied wine</li>
+        <li>Also appeals to more casual red-wine drinkers</li>
+      </ul>
+
+    <a href="http://www.dp-selezioni.com/usa/meridio/">Learn more</a>
+    </div>
+
+
+    <p class="accordion accRed">2016 Viñatigo Tinto Listan Negro</p>
+    <div class="panel redPanel">
+      <p>Tenerife, Canary Islands, Spain</p>
+      <ul>
+        <li>Hails from the uniquely volcanic soil of northwestern Tenerife</li>
+        <li>100% Listan Negro aged for three months in used oak</li>
+        <li>Lively, juicy, light and fresh with notes of flowers and spice</li>
+        <li>A perfect pairing for cheese and charcuterie </li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accRed">2016 Alma Negra M Blend</p>
+    <div class="panel redPanel">
+      <p>Mendoza, Argentina</p>
+      <ul>
+        <li>Ernesto Catena, the owner of Ernesto Catena Vineyards in Argentina,
+          is the eldest son of Nicolás Catena of Catena Zapata and is a 4th
+          generation winemaker.</li>
+        <li>While president of Bodegas Escorihuela, Ernesto felt the need to
+          produce wines that would reflect his basic beliefs:  high quality, a
+          ]different style from the majority of wines being made at the time,
+          smaller volumes and a strong brand concept. In 2002, Ernesto Catena
+          Vineyards was created to express those beliefs. </li>
+        <li>Alma Negra means “Black Soul”, because the color of the wines made
+          from the bonarda grape is deep and intense.</li>
+        <li>Ernesto also wanted to create a wine about which little was known,
+            thus choosing a blend of Malbec and Bonarda.</li>
+        <li>Will appeal to any malbec drinker or lovers of full bodies,
+            fruity red wines</li>
+      </ul>
+    </div>
+
+    <a href="resources/priceList.pdf" download>
+      <button class="downloadBtn">Download Price List</button>
+    </a>
+</div>
+
+
+
+  <div id="footer" class="redFooter">
+    <p>Photo courtesy of <a href="https://unsplash.com/photos/sd_TGAfxPsg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Jessy Smith</a>.
+  </div>
+
 </body>
 </html>

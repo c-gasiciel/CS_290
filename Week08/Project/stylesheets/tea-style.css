@@ -114,18 +114,18 @@ body, html {
 
 
 /* Banner styling */
-#banner {
-  padding: 200px 0px 0px 0px;
+.banner {
+  padding: 270px 0px 0px 0px;
   width: 100%;
-  background-image: url(images/tea.jpg);
+  background-image: url(backgrounds/tea.jpg);
   background-repeat: no-repeat;
-  height: 405px;
+  height: 610px;
   background-position: center;
   bottom: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-#banner-header {
+.banner-header {
   align: center;
 }
 
@@ -135,24 +135,29 @@ h1 {
 }
 
 
-#outer-container {
-  background-color: #5D6A00;
-  /* background-color: #85940C; */
+.outer-container {
   padding: 0px 100px 50px 100px;
 }
 
 
-#inner-container {
+.inner-container {
+  background-color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   align: center;
-  margin: 0px 100px 50px 100px;
-  padding: 100px 150px 100px 150px;
-  background-color: white;
+  margin: 0px 100px 30px 100px;
+  padding: 75px 150px 50px 150px;
 }
 
+/*
+.outer-container {
+  background-color: #5D6A00;
+  background-color: #85940C;
+} */
 
-#inner-container h3 {
+
+
+.inner-container h3 {
   font-weight: bold;
 }
 

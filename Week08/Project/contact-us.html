@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/contact-style.css" type="text/css">
+    <script src="scripts/subscribeScript.js"></script>
+
+</head>
+
+<!-- Dropdown menu adapted from
+https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+<body>
+  <!-- Menu -->
+  <nav id="navbar">
+    <div class="navbar-left">
+      <a href="index.html">
+        Windy City Wine & Beverage
+      </a>
+    </div>
+
+    <div class="navbar-right">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropButton">Wine</button>
+        <div class="dropItems">
+          <a href="sparkling-wine.html">Sparkling</a>
+          <a href="white-wine.html">White</a>
+          <a href="red-wine.html">Red</a>
+        </div>
+      </div>
+
+      <a href="sake.html">Sake</a>
+      <a href="tea.html">Tea</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </nav>
+
+
+  <div class="banner">
+    <div class="banner-header">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+
+<div class="outer-container">
+  <div class="left-container">
+    <div class ="info">
+      <h3>Visit us</h3>
+      <p>Address:</p>
+      <p>123 Fake Street</p>
+      <p>Chicago, IL 60661</p>
+    </div>
+
+    <div class="info">
+      <h3>Give us a call</h3>
+      <p>Phone: 773-123-4567</p>
+    </div>
+  </div>
+
+
+  <div id="right-container">
+    <form>
+      <fieldset>
+        <legend>Join Our Mailing List</legend>
+
+        <label>First Name:
+          <input type="text" name="firstName" id="firstName">
+        </label>
+        <br />
+        <label>Last Name:
+          <input type="text" name="lastName" id="lastName">
+        </label>
+        <br />
+        <label>Email:
+          <input type="email" name="email" id="email">
+          <input type="submit" id="dataSubmit">
+        </label>
+      </fieldset>
+    </form>
+
+    <div>
+      <p><span id="givenResp"> </span></p>
+      <!--
+      <p>Last Name: <span id = "surnameResp"></span></p>
+      <p>Email: <span id = "emailResp"></span></p> -->
+    </div>
+
+  </div>
+</div>
+
+<div id="footer">
+  <p>Photo courtesy of <a href="https://unsplash.com/photos/ApoYbda6_3Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+      Thomas Schaefer</a>.
+
+</div>
+
+</body>
+</html>

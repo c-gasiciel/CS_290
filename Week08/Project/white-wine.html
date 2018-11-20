@@ -1,31 +1,162 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Windy City Wine & Spirits</title>
-    <link rel="stylesheet" href="home-style.css" type="text/css">
+    <title>White Wines</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/subpage-style.css" type="text/css">
+    <script src="scripts/accordionScript.js"></script>
 </head>
 
 <body>
-<h1>White Wines</h1>
+  <nav id="navbar">
+    <div class="navbar-left">
+      <a href="index.html">
+        Windy City Wine & Beverage
+      </a>
+    </div>
 
-<h3>From France</h3>
-<ul>
-  <li><a href="Francois-le-Saint.html">2016 François le Saint Sancerre <em>Silex</em></a></li>
-  <li><a href="Patrick-Piuze.html">2017 Patrick Piuze Bourgogne Aligoté <em>1953</em></a></li>
-  <li><a href="Henri-Perrusset.html">2016 Henri Perrusset Mâcon-Villages</a></li>
-  <li><a href="Domaine-Giacometi.html">2016 Domaine Giacometti <em>Cru des Agriate</em> Patrimonio Blanc</a></li>
-</ul>
 
-<h3>From Italy</h3>
-<ul>
-  <li><a href="Gradis-ciutta.html">2017 Gradis'ciutta Collio Goriziano Pinot Grigio</a></li>
-</ul>
+    <div class="navbar-right">
+      <a href="index.html">Home</a>
 
-<h3>From Germany</h3>
-<ul>
-  <li><a href="Keller.html">2017 Weingut Keller Riesling Trocken <em>von der Fels</em></a></li>
-  <li><a href="Max-Richter.html">2007 Weingut Max Ferd. Richter Mülheimer Sonnenlay Riesling Spätlese</a></li>
-</ul>
+      <div class="dropdown">
+        <button class="dropButton">Wine</button>
+        <div class="dropItems">
+          <a href="sparkling-wine.html">Sparkling</a>
+          <a href="white-wine.html">White</a>
+          <a href="red-wine.html">Red</a>
+        </div>
+      </div>
+
+      <a href="sake.html">Sake</a>
+      <a href="tea.html">Tea</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </nav>
+
+
+  <div class="banner whiteBanner">
+    <div class="banner-header">
+      <h1>White Wines</h1>
+    </div>
+  </div>
+
+<!-- Accordion menu adapted from
+https://wpbeaches.com/create-expandcollapse-faq-accordion-collapse-click/ -->
+  <div class ="outer">
+    <p class="accordion accWhite">2016 François le Saint Sancerre <em>Silex</em></p>
+    <div class="panel whitePanel">
+      <p>Loire Valley, France</p>
+      <ul>
+        <li>Established in 1749 in the heart of Sancerre, Domaine Fouassier is
+          one of the oldest wine growing families in the Loire Valley with a
+          history that spans ten generations.</li>
+        <li>In 2011 the current owners, Benoit and Paul Fouassier, converted
+            estate to biodynamic farming and winemaking.</li>
+        <li>François Le Saint another the label used by the Fouassier family for
+           vines planted on 100% Silex soil that is farmed biodynamic and made
+           with free-run juice.</li>
+      </ul>
+    </div>
+
+    <p class="accordion accWhite">2017 Patrick Piuze Bourgogne Aligoté <em>1953</em></p>
+    <div class="panel whitePanel">
+      <p>Burgundy, France</p>
+      <ul>
+        <li>Aligoté pronounced “al-uh-GO-tay”, is the only other white grape
+          allowed to be grown in Burgundy besides Chardonnay.  It is a natural
+          cross between Pinot Noir and the seldom-seen Gouais blanc.</li>
+        <li>In most areas of Burgundy, Chardonnay and Pinot Noir were considered
+           better wine grapes, and thus could demand higher prices. In some
+           regions, Aligoté was banned.</li>
+        <li>This is made by Patrick Piuze, a famous winemaker based in Chablis
+          who has used his connections to source grapes from some of the best
+          plots in the area to make his wines. </li>
+      </ul>
+    </div>
+
+
+    <p class="accordion accWhite">2016 Henri Perrusset Mâcon-Villages</p>
+    <div class="panel whitePanel">
+      <ul>
+        <li>100% Chardonnay</li>
+        <li>Crisp, balanced, and lightly floral
+        <li>Perfect for someone who wants something between a California
+          chardonnay and Chablis.</li>
+      </ul>
+    </div>
+
+
+  <p class="accordion accWhite">2016 Domaine Giacometti <em>Cru des Agriate</em> Patrimonio Blanc</p>
+  <div class="panel whitePanel">
+    <p>Corsica, France
+    <ul>
+      <li>100% vermentinu</li>
+      <li>Perfect for anyone who wants something light, crisp, and not too
+        fruity or loves sauvignon blanc but wants to try something different</li>
+    </ul>
+  </div>
+
+
+<p class="accordion accWhite">2017 Gradis'ciutta Collio Goriziano Pinot Grigio</p>
+<div class="panel whitePanel">
+  <p>Friuli-Venezia-Giulia, Italy</p>
+  <ul>
+    <li>Before carrying the name Gradis’ciutta, this place was known as
+      Monsvini, which in Latin means “Mount of Wine.” As a historical notary
+      deed proves, already in 1780, the Princics were producing wine in Kosana.</p>
+    <li>Robert Princic- supported by his hard-working parents, Isidoro and
+      Ivanka have worked towards planting 62 acres of the total 87 acres
+      located in Gorizia, Capriva del Friuli, and Dolegna del Collio to vine.</p>
+    <li>A light, crisp wine perfect for any lover of classic pinot grigio!
+  </ul>
+</div>
+
+
+<p class="accordion accWhite">2017 Weingut Keller Riesling Trocken <em>von der Fels</em></p>
+<div class="panel whitePanel">
+  <p>Rheinhessen, Germany</p>
+  <ul>
+    <li>Von der fels means "from the rocks" and this dry Riesling is a blend of
+      young vines from the Grosses Gewächs' vineyards that Keller works,
+      specifically 25-year-old vines in the Kirchspiel, Hubacker and Abtserde</li>
+    <li>Keller's wines are some of the most sought after, and difficult to get,
+      wines on the market today. Jancis Robinson has described his Rieslings as
+      the "Montrachets of Germany"</li>
+    <li>Perfect for those who either recognize the amazing value offered
+       by this famous producer, who prefer a dry Riesling, or are looking for a
+       pairing with lighter and more delicate dishes.</li>
+  </ul>
+</div>
+
+
+  <p class="accordion accWhite">2007 Weingut Max Ferd. Richter Mülheimer Sonnenlay Riesling Spätlese</p>
+  <div class="panel whitePanel">
+    <p>Mosel, Germany</p>
+    <ul>
+      <li>Made by a producer of world-class rieslings</li>
+      <li>Aging adds some complexity</li>
+      <li>Perfect for pairing with spicy food or for someone who wants something
+        sweeter yet different and refreshing</li>
+    </ul>
+  </div>
+
+
+  <a href="resources/priceList.pdf" download>
+    <button class="downloadBtn">Download Price List</button>
+  </a>
+</div>
+
+
+
+
+
+
+  <div id="footer" class="whiteFooter">
+    <p>Photo courtesy of <a href="http://winestitute.com/2016/08/04/health-benefits-of-drinking-white-wine/">
+        Winestitute</a>.
+  </div>
 
 </body>
 </html>
