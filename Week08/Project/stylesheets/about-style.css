@@ -54,6 +54,7 @@ body {
 .navbar-right {
   display: flex;
   align-itmes: center;
+  padding-right: 130px;
 }
 
 
@@ -144,8 +145,9 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 

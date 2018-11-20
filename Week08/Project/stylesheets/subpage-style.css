@@ -148,6 +148,7 @@ h1 {
 .redBanner {
     background-image: url(backgrounds/background03.jpg);
     color: #F1EFF0;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -155,6 +156,7 @@ h1 {
 .whiteBanner {
   background-image: url(backgrounds/white-wine.jpg);
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -162,19 +164,16 @@ h1 {
 .sparklingBanner {
     background-image: url(backgrounds/champagne.jpg);
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-
-/* Styling for rose banner */
-.roseBanner {
-
-}
 
 
 /* Styling for sake banner */
 .sakeBanner {
     background-image: url(backgrounds/sake.jpg);
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -187,16 +186,6 @@ h1 {
   padding: 20px auto 60px auto;
   align-items: center;
   /*margin-bottom: 50px; */
-}
-
-
-.region {
-  padding-bottom: 50px;
-}
-
-
-h3.redRegion {
-  color: #10171E;
 }
 
 

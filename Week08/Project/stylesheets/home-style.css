@@ -12,6 +12,7 @@ body, html {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -167,29 +168,33 @@ https://designmodo.com/create-full-screen-slider/ */
 
 
 .photo01 {
-  background: black;
-  object-fit: fill;
+  background-image: url(backgrounds/winecellar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   left:0;
 }
 
 
 .photo02 {
-  background: blue;
-  object-fit: fill;
+  background-image: url(backgrounds/background01-alt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   left: 100%;
 }
 
 
 .photo03 {
-  background: green;
-  object-fit: fill;
+  background-image: url(backgrounds/background04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   left: 200%;
 }
 
 
 .photo04 {
-  background: red;
-  object-fit: fill;
+  background-image: url(backgrounds/background05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   left: 300%;
 }
 
@@ -201,25 +206,56 @@ https://designmodo.com/create-full-screen-slider/ */
 
 
 .slide-content {
-  width: 635px;
+  width: 600px;
   padding-left: 100px;
 }
 
 
 .slider h3{
-  opacity: 0;
+  color: white;
+  text-shadow: 5px 5px 10px #000000;
   line-height: 1.2;
-  -webkit-transform: translateX(500px);
-  transform: translateX(500px);
+  -webkit-transform: translateX(600px);
+  transform: translateX(600px);
   margin-top: 0;
   letter-spacing: 2px;
   font-family: 'Raleway', sans-serif;
+  font-size: 26px;
 
   /* Animate text */
   -webkit-transition: opacity 800ms, -webkit-transform 800ms;
   transition: transform 800ms, opacity 800ms;
   -webkit-transition-delay: 1s;
   transition-delay: 1s;
+}
+
+
+.photo03 h3 {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+
+.slider p {
+  text-align: right;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  position: absolute;
+  bottom: 0;
+
+  -webkit-transform: translateX(750px);
+  transform: translateX(750px);
+
+  /* Animate text */
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+
+.slider a:visited {
+  color:inherit;
 }
 
 
@@ -274,7 +310,7 @@ https://designmodo.com/create-full-screen-slider/ */
 .slide-radio04:checked ~ .slider-pagination .page04 {
   width: 14px;
   height: 14px;
-  border: 2px solid #EA2E49;
+  border: 2px solid white;
   background: transparent;
 }
 
